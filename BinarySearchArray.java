@@ -24,7 +24,7 @@ public class BinarySearchArray {
 
         int[] arr = {10, 20, 30, 40, 50, 60, 70};  
         System.out.print("Enter element");
-        int key = 10;
+        int key = 30;
         int result = binarySearch(arr, key);
         if (result != -1)
             System.out.println("Element found at index: " + result);
