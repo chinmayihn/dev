@@ -8,23 +8,21 @@ public class BinarySearchArray {
         int high = arr.length - 1;
 
         while (low <= high) {
-            int mid = low + (high - low) / 2;   // avoids overflow
-
+            int mid = low + (high - low) / 2;   
             if (arr[mid] == key)
-                return mid;          // element found
+                return mid;          
             else if (arr[mid] < key)
-                low = mid + 1;       // search right half
+                low = mid + 1;      
             else
-                high = mid - 1;      // search left half
+                high = mid - 1;     
         }
-        return -1;  // element not found
+        return -1;  
     }
 
-    // Main Method
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] arr = {10, 20, 30, 40, 50, 60, 70};  // must be sorted
+        int[] arr = {10, 20, 30, 40, 50, 60, 70};  
         System.out.print("Enter element to search: ");
         int key = 30;
         int result = binarySearch(arr, key);
