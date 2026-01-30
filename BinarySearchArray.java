@@ -23,7 +23,7 @@ public class BinarySearchArray {
         Scanner sc = new Scanner(System.in);
 
         int[] arr = {10, 20, 30, 40, 50, 60, 70};  
-        System.out.print("Enter element to search: ");
+        System.out.print("Enter element");
         int key = 10;
         int result = binarySearch(arr, key);
         if (result != -1)
