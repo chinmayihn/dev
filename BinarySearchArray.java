@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class BinarySearchArray {
 
-    // Binary Search Method
+ 
     static int binarySearch(int[] arr, int key) {
         int low = 0;
         int high = arr.length - 1;
